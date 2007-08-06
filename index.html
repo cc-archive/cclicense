@@ -79,25 +79,25 @@
 		           		</div>
 					</div>
 		        	<div class="choose" id="sharealike">
-						<div class="choose-btn"><input type="checkbox" onchange="modify(this);" name="sa" value="" id="sa" /></div>
+					<div class="choose-btn"><input type="checkbox" onchange="modify(this);" name="sa" value="" id="sa" /></div>
 		           		<div class="choose-icon"><label for="sa"><img src="images/sa.png" border="0"/></label></div>
 		              	<div class="choose-txt">
-		                	<label for="sa" id="sa-label" class="option_on"><strong>Require others to Share-Alike</strong></label><br/>
-		                </div>
+		                		<label for="sa" id="sa-label" class="option_on"><strong>Require others to Share-Alike</strong></label><br/>
+		                	</div>
 		            </div>
-					<div class="choose" id="jurisdiction">
+				<div class="choose" id="jurisdiction">
 		            	<div class="choose-jurisdiction">
 		              		<script language="javascript" type="text/javascript">
 		                  // hardwiring the jurisdiction passed in, right into
 		                  // js
 		                  var jurisdiction_code = "";
 		                  print_jurisdictions_option( jurisdiction_code );
-		                	</script>
+		                		</script>
 		              	</div>
 		              	<div class="choose-txt">
 		                <strong>Jurisdiction of your License</strong><br/>
-		                </div>
-						<div class="jurisdictions">
+				</div>
+					<div class="jurisdictions">
 				        	<select name="sortby" onchange="orderby(this)">
 				            	<option value="">Select a jurisdiction</option>
 				             	<script type="text/javascript" src="http://creativecommons.org/includes/jurisdictions.js"></script>
@@ -187,20 +187,38 @@
 					</div>
 					<div class= "info-txt">Preview</div>
 					<div id="license_selected">
-			            <div id="license_example"></div>
-			          </div>
-					
+			            	<div id="license_example"></div>
+			    		</div>
 					<div class="info-options">
-		              <div class="optional-content">
-		                    <input type="radio" onchange="modify(this)" name="using" value="webpage" id="using_webpage" checked="checked" />
-		                    <label for="using_webpage" class="question" onmouseover="on_tooltip_html(event,'The generator will make html that is ready to be inserted into an html-based webpage.');" onmouseout="hide_tip()">Webpage</label> 
-		                    <br/>
-		                    <input type="radio" onchange="modify(this)" name="using" value="socialnetwork" id="using_socialnetwork" />
-		                    <label for="using_socialnetwork" class="question" onmouseover="on_tooltip_html(event,'The generator will make html that may be inserted into popular social networking site\'s, like http://myspace.com, &lt;em&gt;Who I\'d Like To Meet&lt;/em&gt; box');" onmouseout="hide_tip()">Social Networking Site</label><br/>
-		                    <input type="radio" onchange="modify(this)" name="using" value="videosharing" id="using_videosharing" />
-		                    <label for="using_videosharing" class="question" onmouseover="on_tooltip_html(event,'The generator will make text and a url which you can place in a video sharing service submission\'s description form field.');" onmouseout="hide_tip()">Video Sharing Service</label><br/>
+		              		<div class="optional-content">
+		                    		<input type="radio" onchange="modify(this)" name="using" value="webpage" id="using_webpage" checked="checked" />
+		                    		<label for="using_webpage" class="question" onmouseover="on_tooltip_html(event,'The generator will make html that is ready to be inserted into an html-based webpage.');" onmouseout="hide_tip()">Webpage</label> 
+		                    		<br/>
+		                    		<input type="radio" onchange="modify(this)" name="using" value="socialnetwork" id="using_socialnetwork" />
+		                    		<label for="using_socialnetwork" class="question" onmouseover="on_tooltip_html(event,'The generator will make html that may be inserted into popular social networking site\'s, like http://myspace.com, &lt;em&gt;Who I\'d Like To Meet&lt;/em&gt; box');" onmouseout="hide_tip()">Social Networking Site</label><br/>
+		                    		<input type="radio" onchange="modify(this)" name="using" value="videosharing" id="using_videosharing" />
+		                    		<label for="using_videosharing" class="question" onmouseover="on_tooltip_html(event,'The generator will make text and a url which you can place in a video sharing service submission\'s description form field.');" onmouseout="hide_tip()">Video Sharing Service</label><br/>
 						</div>
 					</div>
+				</div>
+				<div class= "marking">
+					<div class= "outputheading" id="how2mark">
+						<h2> How To Mark Your Video Work </h2>
+					</div>
+					<div id="videobumper"><img src= "videobumper-bw.png" alt ="videobumper b&w" /></div>
+					<div class="info-options">
+						<input type="radio" onchange="modify(this)" name="using" value="bw" id="blackwhite" checked="checked" />
+		                    	<label for="blackwhite" class="question">b&w</label> 
+		                    	<br/>
+		                    	<input type="radio" onchange="modify(this)" name="using" value="color" id="color" />
+		                    	<label for="color" class="question">color</label><br/>
+					</div>
+					<div class= "marking-txt">
+						Include a bumper at the begining or end of your video. Use our official bumper or <a href="http://wiki.creativecommons.org/Video_bumper_guidelines">
+create</a> your own.<br />
+						<a href="http://wiki.creativecommons.org/Marking_Video"> Learn more</a> about marking video work.</a>
+					</div>
+				</div>	
 			</div>
 		</div>
 	</div>
