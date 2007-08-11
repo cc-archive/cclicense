@@ -24,10 +24,6 @@ a, a:link, a:visited {
   color: #13339a;
 }
 
-iframe {
-    border: none;
-}
-
 #ff-box {
 	width: 110px;
 	height: 45px;
@@ -150,7 +146,6 @@ iframe {
 	overflow: auto;
 	margin-top: 0px;
 	background-color: #fff;
-	height:500px;
 }
 
 .inactive {

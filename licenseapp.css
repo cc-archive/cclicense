@@ -1,31 +1,29 @@
 #dhtmllicense{
 width: 100%;
+padding-bottom: .5%;
 }
 
 #input{
 float: left;
-width: 45%;
+width: 47%;
 margin-left: 1%;
-margin-top: 1%;
 background-color: #fff;
 }
 
 .inputheader h2{
-font-size: 1em;
-}
-
-h2{
-font-size: 1em;
+font-size: .9em;
+margin: 1%;
 }
 
 #output{
 float: right;
-width: 45%;
+width: 46%;
 background-color: #e4eba0;
 padding-left: 2%;
 padding-right: 2%;
 margin-right: 1%;
 margin-top: 1%;
+margin-bottom: 1%;
 }
 
 .choose {
@@ -93,6 +91,10 @@ font-size: .9em;
 	cursor: text;
 }
 
+.optional{
+	padding-bottom: .5%;
+}
+
 .choose-jurisdiction {
 	float: left;
 	width:  6em;
@@ -115,8 +117,8 @@ font-size: .9em;
 
 .step{
 border: 1px solid #a7a9ac;
-margin-bottom: 2%;
-padding: 2%;
+margin-bottom: .2%;
+padding: .5% 1% .5% 1%;
 }
 
 .step img{
@@ -124,9 +126,143 @@ width: 30px;
 height: 30px;
 }
 
+.optional-content{
+	float: relative;
+}
+
+.optional-content input
+{
+    width: 100%;
+    border: 1px solid gray;
+} 
+
+.info{
+	padding-bottom: 1%;
+}
+.info-txt{
+	float: left;
+	margin-right: 1%;
+}
+
+.info-icon{
+	margin-left: 1%;
+	margin-right: 1%;
+	float: left;
+	background: white;
+	width: 30px;
+	padding-left: 8px;
+	padding-right: 1px;
+	padding-top: 3px;
+	border: 1px solid gray;
+}
+
+.info-options{
+	font-size: .8em;
+}
+
+.info{
+	clear: right;
+}
+
+
+input.info-input{
+	background-color: #ccc;
+}
+
+.info-input{
+	padding-left: 10%;
+}
+
+.info-txtarea{
+	padding-left: 10%;
+}
+
+.info-txtarea textarea{
+	width: 100%;
+	border: 1px solid gray;
+	background: #ccc;
+}
+
 #licensename h1, a{
 font-size: 1em;
 text-align: center;
 }
 
+.info-input input{
+	clear: right;
+	width: 100%;
+	border: 1px solid gray;
+	background: #ccc;
+}
 
+#license_example{
+	float: left;
+	clear: left;
+	padding-left: 10%;
+	width: 40%;
+	height: 4.5em;
+	background-color: white;
+	border: 1px solid gray;
+}
+
+#codetype {
+	float: right;
+	font-size: .75em;
+	clear: right;
+}
+
+.menu-txt{
+	float: left;
+	font-size: .9em;
+	margin-right: .5em;
+}
+
+#preview{
+	text-align: center;
+	font-size: .8em;
+	background-color: white;
+	padding: 1%;
+	margin-bottom: 1%;
+	border: 1px solid gray;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.jurisdictions{
+	float: left;
+}
+
+#videobumper img{
+	float: left;
+	margin-right: 5%;
+	margin-bottom: 2%;
+}
+
+.markingtext{
+	float: left;
+}
+
+.optional-name{
+	float: left;
+}
+
+.optional-content{
+	clear: right;
+	float: left;
+}
+
+.outputheading h2{
+	font-size: .9em;
+	margin: 1% 0 1% 0;
+}
+
+.marking-txt {
+	font-size: .9em;
+	text-align: justify;
+}
+
+#learnmore {
+	text-align: center;
+	font-size: .9em;
+}

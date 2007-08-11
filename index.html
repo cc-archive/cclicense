@@ -26,7 +26,7 @@
 	<div id="header-box">
 		<div id="header">
 			<div id="title">
-				<a href="http://cctools.svn.sourceforge.net/viewvc/*checkout*/cctools/cclicense/trunk/"><img src="index_files/cc-license.png" alt="ccLicense" class="png" border="0" height="52" width="183" /></a>
+				<a href="http://cctools.svn.sourceforge.net/viewvc/*checkout*/cctools/cclicense/trunk/"><img src="images/cclicense.png" alt="ccLicense" class="png" border="0" height="52" width="183" /></a>
 
 				<div id="title-by">
 					by <a href="http://creativecommons.org/">Creative Commons</a>
@@ -36,10 +36,6 @@
 	</div>
 
 	<div id="results-box">
-		<div id="options">
-			<a href="http://wiki.creativecommons.org/CcLicense" title="Understand how work is licensed"><!-- info icon from: http://www.famfamfam.com/lab/icons/silk/ (cc-by 2.5)  -->
-			<img src="images/information.png" id="subNFO" class="png" border="0" height="16" width="16" name="subNFO" /> What is this?</a> &nbsp;&nbsp; <a href="http://wiki.creativecommons.org/Content_Curators" title="Browse directories of licensed images, sounds, videos and more"><img src="images/cc.png" id="subCC" class="png" border="0" height="16" width="16" name="subCC" /> Content Directories</a> &nbsp;&nbsp; <a href="#" onclick="breakOut(); return false;" title="Only show search results"><img src="index_files/break.png" id="subBreak" class="png" border="0" height="12" width="12" name="subBreak" /> Remove Frame</a>
-		</div>
 		<span style="float: right;"><a href="http://creativecommons.org/support/"><img src="index_files/spread-3.gif" border="0" /></a></span>
 		<div id="dhtmllicense">
 			<div id = "input">
@@ -119,105 +115,111 @@
 							</select>
 						</div>
 					</div>
-				</div>				
+				</div>			
+				<div class="inputheader">
+					<h2> 2. Add Optional Information </h2> 
+				</div>	
 				<div class="step">
-					<div class="inputheader">
-						<h2> 2. Add Optional Information </h2> 
-					</div>
-					<div class="optional" id="title">
-                  			<div class="optional-name">
-                    				<label for="info_title">Title of Work</label>
-                  			</div>
-                  			<div class="optional-content">
+					<div class="optional" id="work-title">
+                  		<div class="optional-name">
+                    		<label for="info_title">Title of Work</label>
+                  		</div>
+                  		<div class="optional-content">
                     				<input type="text" name="info_title" id="info_title" onchange="modify(this)" />
                   			</div>
-                			</div>
-          				<div class="optional" id="name">
-                  			<div class="optional-name">
-                    				<label for="info_attribute_to_name">Attribute to Name</label>
+                		<br clear="both"/>
+					</div>
+          			<div class="optional" id="name">
+                  		<div class="optional-name">
+                    		<label for="info_attribute_to_name">Attribute to Name</label>
 						</div>
-                				<div class="optional-content">
-                    				<input type="text" name="info_attribute_to_name" value="" id="info_attribute_to_name" onchange="modify(this)" />
-                  			</div>
-                			</div>
+                		<div class="optional-content">
+                    		<input type="text" name="info_attribute_to_name" value="" id="info_attribute_to_name" onchange="modify(this)" />
+                  		</div>
+                		<br clear="both"/>
+					</div>
 					<div class="optional" id="url">
-                  			<div class="optional-name">
-                    				<label for="info_attribute_to_url">Attribute to URL</label>
+                  		<div class="optional-name">
+                    		<label for="info_attribute_to_url">Attribute to URL</label>
 						</div>
-                  			<div class="optional-content">
-                    				<input type="text" name="info_attribute_to_url" value="" id="info_attribute_to_url" onchange="modify(this)" />
-                  			</div>
-                			</div>
+                  		<div class="optional-content">
+                    		<input type="text" name="info_attribute_to_url" value="" id="info_attribute_to_url" onchange="modify(this)" />
+                  		</div>
+                		<br clear="both" />
+					</div>
 					<div class="optional" id="source">
                   			<div class="optional-name">
                     				<label for="info_source_work_url">
                     					<a class="question" onmouseover="on_tooltip_html(event,'A work another is derived from.');" onmouseout="hide_tip()">Source Work</a> URL
-							</label>
+									</label>
                   			</div>
                   			<div class="optional-content">
                     				<input type="text" name="info_source_work_url" value="" id="info_source_work_url" onchange="modify(this)" />
                   			</div>
-                			</div>
+                			<br clear="both"/>
+					</div>
 					<div class="optional" id="permissions">
                   			<div class="optional-name">
                     				<label for="info_more_permissions_url">More Permissions URL&nbsp;</label>
+									
                   			</div>
                   			<div class="optional-content">
                     				<input type="text" name="info_more_permissions_url" value="" id="info_more_permissions_url" onchange="modify(this)" />
-                  			</div>
+                  			
+							</div>
+							<br clear="both"/>
 					</div>
 				</div>
 			</div>
 			<div id = "output">
-				<div id="licensename"><h1><a href="http://www.creativecommons.org/licenses/by/3.0">Creative Commons Attribution 3.0 Unported</a> </h1></div>
+				<div id="licensename">
+					<h1><a href="http://www.creativecommons.org/licenses/by/3.0">Creative Commons Attribution 3.0 Unported</a> </h1>
+				</div>
+				<div id= "preview">
+					<a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
+						<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" />
+					</a> <br />This work is licensed under a 
+					<a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>.
+				</div>
 				<div class= "info" id="icons">
 					<div class="info-txt"> Official Icons </div>
-					<div class= "info-icon"><img src="by.png" alt="by" /></div>
-					<div class= "info-options">png<br/>svg<br/></div>
+					<div class= "info-icon">
+						<img src="images/by-icon.png" alt="by" />
+					</div>
+					<div class= "info-options">
+						<a href="images/attribution.png">png</a><br/>
+						<a href="images/attribution.svg">svg</a><br/>
+					</div>
 				</div>
+			
 				<div class= "info" id="uri">
 					<div class= "info-txt">URI</div>
 					<div class="info-input">
 						<input name="license_uri" type="text" value="http://www.creativecommons.org/licenses/by/3.0" id="uri_to_license" readonly="true">
+						</input>
 					</div>
 				</div>
-				<div class= "info" id="code">
-					<div class= "info-txt">Code</div>
-					<div class= "info-txtarea">
-						 <textarea name="result" id="result" rows="1" cols="30" onfocus="this.select();"></textarea>
-					</div>
-					<div class= "info-txt">Preview</div>
-					<div id="license_selected">
-			            	<div id="license_example"></div>
-			    		</div>
-					<div class="info-options">
-		              		<div class="optional-content">
-		                    		<input type="radio" onchange="modify(this)" name="using" value="webpage" id="using_webpage" checked="checked" />
-		                    		<label for="using_webpage" class="question" onmouseover="on_tooltip_html(event,'The generator will make html that is ready to be inserted into an html-based webpage.');" onmouseout="hide_tip()">Webpage</label> 
-		                    		<br/>
-		                    		<input type="radio" onchange="modify(this)" name="using" value="socialnetwork" id="using_socialnetwork" />
-		                    		<label for="using_socialnetwork" class="question" onmouseover="on_tooltip_html(event,'The generator will make html that may be inserted into popular social networking site\'s, like http://myspace.com, &lt;em&gt;Who I\'d Like To Meet&lt;/em&gt; box');" onmouseout="hide_tip()">Social Networking Site</label><br/>
-		                    		<input type="radio" onchange="modify(this)" name="using" value="videosharing" id="using_videosharing" />
-		                    		<label for="using_videosharing" class="question" onmouseover="on_tooltip_html(event,'The generator will make text and a url which you can place in a video sharing service submission\'s description form field.');" onmouseout="hide_tip()">Video Sharing Service</label><br/>
+			 	<div class= "info" id="code">
+						<div class= "info-txt">Code</div>
+						<div class= "info-txtarea">
+							<textarea name="result" id="result" rows="1" cols="30" onfocus="this.select();"></textarea>
 						</div>
 					</div>
-				</div>
-				<div class= "marking">
+				
+				
+				<div id= "marking">
 					<div class= "outputheading" id="how2mark">
 						<h2> How To Mark Your Video Work </h2>
 					</div>
-					<div id="videobumper"><img src= "videobumper-bw.png" alt ="videobumper b&w" /></div>
-					<div class="info-options">
-						<input type="radio" onchange="modify(this)" name="using" value="bw" id="blackwhite" checked="checked" />
-		                    	<label for="blackwhite" class="question">b&w</label> 
-		                    	<br/>
-		                    	<input type="radio" onchange="modify(this)" name="using" value="color" id="color" />
-		                    	<label for="color" class="question">color</label><br/>
+					<div id="videobumper">
+						<a href="http://wiki.creativecommons.org/Image:By_bw.png"><img src= "images/videobumper-bw.png" alt ="videobumper bw" /></a>
 					</div>
+
 					<div class= "marking-txt">
-						Include a bumper at the begining or end of your video. Use our official bumper or <a href="http://wiki.creativecommons.org/Video_bumper_guidelines">
-create</a> your own.<br />
-						<a href="http://wiki.creativecommons.org/Marking_Video"> Learn more</a> about marking video work.</a>
+						Include a bumper at the begining or end of your video. Use our <a href="http://wiki.creativecommons.org/CC_video_bumpers"> official bumper</a> or <a href="http://wiki.creativecommons.org/Video_bumper_guidelines">
+create</a> your own.
+</div>
+					<div id="learnmore"><strong><a href="http://wiki.creativecommons.org/Marking_Video"> Learn more</a> about marking.</strong></div>
 					</div>
 				</div>	
 			</div>
